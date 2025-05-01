@@ -18,7 +18,7 @@ In this tutorial, we observe different network traffic to and from Azure Virtual
 - Windows 10 (22H2)
 - Ubuntu Server 20.04
 
-<h2> Congfig Steps</h2>
+<h2> Steps</h2>
 
 - Step 1
 - Step 2
