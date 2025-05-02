@@ -75,7 +75,9 @@ In Wireshark in the filter bar type DNS and press enter. In Powershell type nslo
 
 Go back to wireshark, the event should still be selected, click Domain Name System (response) dropdown, and select both the queries and answers dropdown. Notice how in the answers section it include other information that the query has like the data length, time to live, and the AAAA address which is google's current IPv6 address.
 
+<img width="1440" alt="Screenshot 2025-05-02 at 1 18 40 PM" src="https://github.com/user-attachments/assets/a3276f38-bd24-46e8-9e5f-01313eb4f679" />
 
+In Wireshark in the filter bar type tcp.port == 3389, which is the port number for RDP. Notice how there is a constant flow of traffic since we connect to the VM via RDP.
 
 
 
