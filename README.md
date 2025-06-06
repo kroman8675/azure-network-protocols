@@ -55,7 +55,7 @@ Go into the Azure website if not already, select the Linux VM. On the side click
 
 <img width="1440" alt="Screenshot 2025-05-02 at 9 42 44 AM" src="https://github.com/user-attachments/assets/81e59704-45be-4d0f-95e1-3f9978840cca" />
 
-Back in the windows VM attempt to ping the Linux's private IP address again. Notice how in Poweshell now all the packets were recieved. In wireshark instead of it just request, it now show request and reply 4 times. The request is the windows VM and the Linux now responding back with Reply.
+Back in the windows VM attempt to ping the Linux's private IP address again. Notice how in Powershell now all the packets were recieved. In wireshark instead of it just request, it now show request and reply 4 times. The request is the windows VM and the Linux now responding back with Reply.
 
 - Step 4: Observe the other Network Protocls (SSH, DNS, RDP)
 
