@@ -61,11 +61,11 @@ Back in the windows VM attempt to ping the Linux's private IP address again. Not
 
 <img width="1428" alt="Screenshot 2025-05-02 at 10 30 28 AM" src="https://github.com/user-attachments/assets/043af137-4cbf-4365-b64c-2318b4d00e8d" />
 
-In Wireshark, type ssh in the filter bar and press enter. In Powershell type ssh, the username, the @ symbol,a and Linux VMs private IP adress and hit enter. When it asks, Are you sure you want to continue connecting?, type yes and press enter. Now type in your password and press enter. 
+In Wireshark, type ssh in the filter bar and press enter. In Powershell type ssh, the username, the @ symbol,and the Linux VMs private IP adress and hit enter. When it asks, Are you sure you want to continue connecting?, type yes and press enter. Now type in your password and press enter. 
 
 ![image](https://github.com/user-attachments/assets/085b7ba6-8471-4538-90b0-d763ccf287c4)
 
-You should now be connected to the Linux VM.I typed in Hi in Powershell and notice the traffic come in Wireshark .Click on one of the events in Wireshark and click the SSH protocol then the SSH Version 2 dropdown. The encrypted packet is part of some of the traffic, we cannot see hello or part of it as everything that is typed is sent over securely. In Powershell type exit then press enter to close out the SSH connection.
+You should now be connected to the Linux VM.I typed in Hello in Powershell and notice the traffic that comes in Wireshark. Click on one of the events in Wireshark and click the SSH protocol then the SSH Version 2 dropdown. The encrypted packet is part of some of the traffic, we cannot see hello or part of it as everything that is typed is sent over securely. In Powershell type exit then press enter to close out the SSH connection.
 
 <img width="1440" alt="Screenshot 2025-05-02 at 11 07 59 AM" src="https://github.com/user-attachments/assets/fe4af3ea-f9a6-449f-9fef-9e4593164de7" />
 
@@ -73,7 +73,7 @@ In Wireshark in the filter bar type DNS and press enter. In Powershell type nslo
 
 <img width="1436" alt="Screenshot 2025-05-02 at 11 24 59 AM" src="https://github.com/user-attachments/assets/f350bb87-cf3e-4b61-87b6-e5e4b8f2d699" />
 
-Go back to wireshark, the event should still be selected, click Domain Name System (response) dropdown, and select both the queries and answers dropdown. Notice how in the answers section it include other information that the query has like the data length, time to live, and the AAAA address which is google's current IPv6 address.
+Go back to wireshark, the event should still be selected, click Domain Name System (response) dropdown, and select both the Queries and Answers dropdown. Notice how in the answers section it include other information that the query has like the data length, time to live, and the AAAA address which is google's current IPv6 address.
 
 <img width="1440" alt="Screenshot 2025-05-02 at 1 18 40 PM" src="https://github.com/user-attachments/assets/a3276f38-bd24-46e8-9e5f-01313eb4f679" />
 
