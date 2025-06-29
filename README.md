@@ -3,7 +3,7 @@
 </p>
 
 <h1>Network Security Groups (NSGs) and Inspecting Traffic Between Azure Virtual Machines</h1>
-In this tutorial, we will observe different network traffic to and from Azure Virtual Machines with Wireshark as well as experiment with Network Security Groups. <br />
+In this tutorial, we will observe the different types of network traffic to and from Azure Virtual Machines with Wireshark as well as experiment with Network Security Groups. <br />
 
 <h2>Environments and Technologies Used</h2>
 
@@ -20,7 +20,7 @@ In this tutorial, we will observe different network traffic to and from Azure Vi
 
 <h2> Steps</h2>
 
-- Step 1: Configure a Network Security Group 
+- Step 1: Configure a Network Security Group (NSG)
 - Step 2: Notice the effect of the NSG
 - Step 3: Delete the NSG and observe ICMP
 - Step 4: Observe some other Network Protocls (SSH,DNS,RDP)
@@ -31,7 +31,7 @@ In this tutorial, we will observe different network traffic to and from Azure Vi
 
 <img width="1440" alt="Screenshot 2025-05-02 at 9 14 45 AM" src="https://github.com/user-attachments/assets/e894e6ab-6ed7-4436-b7b2-44b6b14e4279" />
 
-On the Azure website, select the Linux VM. On the side left click the Networking down arrow then Networking Settings. Under Rules, click Create a Port Rule on the bottom right screen and then select Inbound Port Rule.
+On the Azure website, select the Linux VM. On the side left click the Networking down arrow then Networking Settings. Under Rules, click Create a Port Rule and then select Inbound Port Rule.
 
 <img width="1440" alt="Screenshot 2025-05-02 at 9 21 43 AM" src="https://github.com/user-attachments/assets/8b40d344-c0f5-4185-9d29-b17de87e3694" />
 
