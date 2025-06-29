@@ -55,17 +55,21 @@ Go into the Azure website if not already, select the Linux VM. On the left side 
 
 <img width="1440" alt="Screenshot 2025-05-02 at 9 42 44 AM" src="https://github.com/user-attachments/assets/81e59704-45be-4d0f-95e1-3f9978840cca" />
 
-Back in the windows VM attempt to ping the Linux's private IP address again. Notice how in Powershell now all the packets were recieved. In Wireshark instead of it just saying request, it now shows request and reply 4 times. The request is the windows VM and the Linux VM is now responding back with Reply.
+Back in the windows VM attempt to ping the Linux VMs private IP address again. Notice how in Powershell now all the packets were recieved. In Wireshark instead of it just saying request, it now shows request and reply 4 times. The request is the windows VM and the Linux VM is now responding back with Reply.
 
 - Step 4: Observe the other Network Protocls (SSH, DNS, RDP)
 
-<img width="1428" alt="Screenshot 2025-05-02 at 10 30 28 AM" src="https://github.com/user-attachments/assets/043af137-4cbf-4365-b64c-2318b4d00e8d" />
+<img width="1440" alt="Screenshot 2025-06-29 at 1 39 54 PM" src="https://github.com/user-attachments/assets/c0150123-1a32-4c52-8d9a-cd2d6028a4dc" />
 
-In Wireshark, type ssh in the filter bar and press enter. In Powershell type ssh, the username, the @ symbol,and the Linux VMs private IP adress and hit enter. When it asks, Are you sure you want to continue connecting?, type yes and press enter. Now type in your password and press enter. 
+In Wireshark, type ssh in the filter bar and press enter. In Powershell type ssh, the Linux VMs username, the @ symbol,and the the Linux VMs private IP address and hit enter. Type in your password and press enter. 
 
-![image](https://github.com/user-attachments/assets/085b7ba6-8471-4538-90b0-d763ccf287c4)
+<img width="1436" alt="Screenshot 2025-06-29 at 1 43 45 PM" src="https://github.com/user-attachments/assets/237b5b8e-02ec-49d9-8fd4-3a9c2c96189f" />
 
-You should now be connected to the Linux VM.I typed in Hello in Powershell and notice the traffic that comes in Wireshark. Click on one of the events in Wireshark and click the SSH protocol then the SSH Version 2 dropdown. The encrypted packet is part of some of the traffic, we cannot see hello or part of it as everything that is typed is sent over securely. In Powershell type exit then press enter to close out the SSH connection.
+You should now be connected to the Linux VM. I typed in hello in Powershell and notice the traffic that comes in Wireshark.  
+
+<img width="1440" alt="Screenshot 2025-06-29 at 1 44 48 PM" src="https://github.com/user-attachments/assets/56ecc25f-14b9-411a-adfa-20141387b10c" />
+
+Click on one of the events in Wireshark and click the SSH protocol dropdown then the SSH Version 2 dropdown. The encrypted packet is part of some of the traffic, we cannot see hello or part of it as everything that is typed is sent over securely. In Powershell type exit then press enter to close out the SSH connection.
 
 <img width="1440" alt="Screenshot 2025-05-02 at 11 07 59 AM" src="https://github.com/user-attachments/assets/fe4af3ea-f9a6-449f-9fef-9e4593164de7" />
 
