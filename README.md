@@ -73,15 +73,15 @@ Click on one of the events in Wireshark and click the SSH protocol dropdown then
 
 <img width="1440" alt="Screenshot 2025-05-02 at 11 07 59 AM" src="https://github.com/user-attachments/assets/fe4af3ea-f9a6-449f-9fef-9e4593164de7" />
 
-In Wireshark in the filter bar type DNS and press enter. In Powershell type nslookup google.com and press enter. Now in Wireshark click the most recent event. If I type in google's IPv4 address that is in Powershell which is currently 142.251.215.238, in the browser and press enter, it takes me to google.com
+In Wireshark in the filter bar type DNS and press enter. In Powershell type nslookup google.com and press enter. Notice all the traffic that comes into Wireshark.
 
-<img width="1436" alt="Screenshot 2025-05-02 at 11 24 59 AM" src="https://github.com/user-attachments/assets/f350bb87-cf3e-4b61-87b6-e5e4b8f2d699" />
+<img width="1432" alt="Screenshot 2025-06-29 at 1 59 33 PM" src="https://github.com/user-attachments/assets/4ea5a2f7-9d3e-4a0b-b06b-88a3d4398953" />
 
-Go back to wireshark, the event should still be selected, click Domain Name System (response) dropdown, and select both the Queries and Answers dropdown. Notice how in the answers section it include other information that the query has like the data length, time to live, and the AAAA address which is google's current IPv6 address.
+If I type in google's IPv4 address that is in Powershell which is currently 142.250.73.110, in the browser and press enter, it will takes me to google.com
 
-<img width="1440" alt="Screenshot 2025-05-02 at 1 18 40 PM" src="https://github.com/user-attachments/assets/a3276f38-bd24-46e8-9e5f-01313eb4f679" />
+<img width="1428" alt="439999768-a3276f38-bd24-46e8-9e5f-01313eb4f679" src="https://github.com/user-attachments/assets/dac12cc9-9476-44ec-9e24-45be1103a6bc" />
 
-In Wireshark in the filter bar type tcp.port == 3389, which is the port number for RDP. Notice how there is a constant flow of traffic since we connect to the VM via RDP.
+The protocol we will observe is RDP, in Wireshark in the filter bar type tcp.port == 3389, which is the port number for RDP. Notice how there is a constant flow of traffic since we connect to the VM via RDP.
 
 
 
