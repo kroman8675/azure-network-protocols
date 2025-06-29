@@ -51,7 +51,7 @@ Open Windows Powershell. Type ping and the Linux VM's private IP address and hit
 
 <img width="1440" alt="Screenshot 2025-05-02 at 9 38 39 AM" src="https://github.com/user-attachments/assets/b1118729-bee3-497e-9b7f-a75e67b0b574" />
 
-Go into the Azure website if not already, select the Linux VM. On the left side click the Networking down arrow then Networking Settings. Under Rules, click the trashcan for our NSG and select Yes for deleting the security rule.
+Go into the Azure website if not already, select the Linux VM. On the left side click the Networking down arrow then Networking Settings. Under Rules, click the trashcan for our NSG and select Yes for deleting our security rule.
 
 <img width="1440" alt="Screenshot 2025-05-02 at 9 42 44 AM" src="https://github.com/user-attachments/assets/81e59704-45be-4d0f-95e1-3f9978840cca" />
 
